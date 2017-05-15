@@ -14,7 +14,7 @@ Nils Fredrik Iselvmo Bjerk.
 
 ## Oppgave 1.2.1
 
-Titall til totall: 
+Titall til totall:     
 1 = 0001
 
 2 = 0010
