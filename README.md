@@ -73,9 +73,9 @@ som "pusher". Serveren "merger" altså da ikke endringene, men brukerne.
 
 Det kan også oppstå en rekke situasjoner dersom begge endrer på samme linje i en fil:
 
-1)Brukeren som ikke enda har "committet" sin endring, vil måtte "stashe" sine endringer eller "merge" endringene når
+- 1) Brukeren som ikke enda har "committet" sin endring, vil måtte "stashe" sine endringer eller "merge" endringene når
 han "puller" fra server.
-2)den mest nylig endringen er den som blir "committet".
+- 2) Den mest nylig endringen er den som blir "committet".
 
 
 ## Oppgave 1.2.4
