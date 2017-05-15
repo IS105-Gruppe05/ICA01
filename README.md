@@ -142,15 +142,14 @@ Forskjeller mellom Golang og Java
 
 (4) 
 
-Hvilke viktige poeng illustrerer denne øvelsen når det gjelder bruk av et programmeringsmiljø på en platform?
-
 I mappen Log finner dere en main.go fil som importerer en funksjon fra log.go (finnes i mappen log). Den beregner logartimen av base 2 til et tall som dere bestemmer. F.eks. hvis dere vil regne ut logaritmen av base 2 til 10:
 ```
 ~ $ go run main.go 10
 ```
 
+Hvilke viktige poeng illustrerer denne øvelsen når det gjelder bruk av et programmeringsmiljø på en platform?
 
-Programmering på en platform har mange fordeler, der i blant versjonskontroll, og effektivitet. Vi fant også ut at mappestruktur er veldig viktig for å kunne importere en selvlaget pakke, i dette tilfellet “package log”, som ble importert i main.go via “import ./log”. En forutsetning for at dette skal kunne gå er at filene er i samme mappe og at den ene kaller opp funksjoner, som er definert I den andre. De må derfor ha samme pakke navn.
+Programmering på en platform har mange fordeler, der i blant versjonskontroll, og effektivitet. Vi fant også ut at mappestruktur er veldig viktig for å kunne importere en selvlaget pakke, i dette tilfellet “package log”, som ble importert i main.go via “import ./log”. En forutsetning for at dette skal kunne gå er at filen som det importeres fra, må være i en undermappe i den mappen som main filen ligger i.
 
 Versjonskontroll trenger ikke nødvendigvis å være plattformuavhengig enda, siden de fleste systemer er basert på unix, så er det vel enklere å kunne tilby Gitbash som en løsning for windows baserte brukere. På spørsmål om det bør være plattformavhengig, så vil det nok I fremtiden komme ulike operativsystemer som ikke bare tilhører unix og da kan det kanskje være mer relevant og utvikle versjonskontroll som kan være plattformuavhengig.
 
