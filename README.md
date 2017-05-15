@@ -14,7 +14,7 @@ Nils Fredrik Iselvmo Bjerk.
 
 ## Oppgave 1.2.1
 
-Titall til totall:
+Titall til totall: 
 1 = 0001
 
 2 = 0010
@@ -39,7 +39,7 @@ Verdier på de ulike plassene:
 2^8=256   
 2^9=512
 
-Totall til titall: 
+Totall til titall:  
 100 = 1*2^2 + 0*2^1 + 0*2^0 = 4 + 0 + 0 = 4  
 1001 = 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0 = 8 + 0 + 0 +1 = 9  
 1100110011 = 512 + 256 + 0x128 + 0x64 + 32 + 16 + 0x8 + 0x4 + 2 + 1 = 819   
