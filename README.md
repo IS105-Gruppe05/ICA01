@@ -102,12 +102,12 @@ han "puller" fra server.
 
 (1) Hvilken fordeler og ulemper har en git-flow-modell med en hovedrepository?
 
-Link til hovedrepository: https://github.com/Bredema/is105-uke04 
+Link til hovedrepository: https://github.com/IS105-Gruppe05/ICA01 
 Fordeler: Parallell jobbing fungerer godt, enkelte kan gjøre endringer, så kan andre 
 i gruppen sjekke om jobber er gjort bra. Det er også lettere å gå tilbake å gjør endringer
 hvis det er noe som ikke fungerer. Samtlige har også mulighet til å kun gjøre endringer i sin egen branch, slik at man unngår å overskrive andres arbeid.
-Ulemper: Kanskje hvis man ikke er flink til å update/merge branchen sin ofte, så kan det bli
-mye og uoversiktlig.
+Ulemper: Hvis man ikke er flink til å update/merge branchen sin ofte, så kan det bli
+mye og uoversiktlig. Også hvis flere gjør endringer samtidig så kan det bli komplikasjoner.
 
 
 (2) Finn ut hva heter objektfiler for de mest brukte platformer (Unix/Linux, MS Windows, Mac OS X)! Hvorfor, etter deres mening, har disse platformene så forskjellige objektfil-formater?
@@ -141,8 +141,14 @@ Forskjeller mellom Golang og Java
 
 
 (4) 
-(Master-> log)
+
 Hvilke viktige poeng illustrerer denne øvelsen når det gjelder bruk av et programmeringsmiljø på en platform?
+
+I mappen Log finner dere en main.go fil som importerer en funksjon fra log.go (finnes i mappen log). Den beregner logartimen av base 2 til et tall som dere bestemmer. F.eks. hvis dere vil regne ut logaritmen av base 2 til 10:
+```
+~ $ go run main.go 10
+```
+
 
 Programmering på en platform har mange fordeler, der i blant versjonskontroll, og effektivitet. Vi fant også ut at mappestruktur er veldig viktig for å kunne importere en selvlaget pakke, i dette tilfellet “package log”, som ble importert i main.go via “import ./log”. En forutsetning for at dette skal kunne gå er at filene er i samme mappe og at den ene kaller opp funksjoner, som er definert I den andre. De må derfor ha samme pakke navn.
 
