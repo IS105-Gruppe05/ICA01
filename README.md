@@ -161,6 +161,7 @@ GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes ogs�
 
 
 (5)
+
 I mappen logcli finnes en logcli.go fil hvor også en kan velge et tall, og regne dette tallets logartime av base 2.
 Men i denne så ligger all koden i samme, slik at det er lettere å builde. Vi har valgt å ikke legge meg noen kjørbar fil, siden det er lettere for hver enkel å bare builde selv, slik at de for et program som kan kjøres på sitt eget operativsystem.
 
@@ -179,8 +180,20 @@ Nei! Den eneste hensikten med å ha et utførbart program i Repositoryen er for 
 i tillegg så vil man måtte “builde” forskjellige filer for forskjellige operativsystemer.
 
 (6)
-(Master -> log -> logbcli.exe)
-(Kildekode ligger som log.go og logbcli.go) 
+
+I mappen logbcli finnes en logbcli.go fil som er veldig like logcli.go filen, bare at i denne versjonen kan man også velge base, hvor basen er det første argumentet. Så hvis man vil regne logaritmen av base 10 til 5, må man først builde logbcli.go filen, og deretter kjøre programmet:
+
+```
+~ $ ./logbcli 10 5
+```
+
+Eller hvis man vil regne logaritmen av base 2 til 3:
+
+```
+~ $ ./logbcli 2 3
+```
+
+
 Hvordan skiller pakken log​, som dere har implementert, seg fra andre pakker i go, som, for eksempel, fmt​? 
 
 
