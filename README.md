@@ -179,7 +179,7 @@ Er det hensiktsmessig å legge inn denne filen i git repository? Begrunn svaret!
 Nei! Den eneste hensikten med å ha et utførbart program i Repositoryen er for å dele den med resten av gruppen. MEN, siden alle har tilgang til .go filene vil alle kunne builde sine egne programmer, så mye av hensikten faller egentlig bort.
 i tillegg så vil man måtte “builde” forskjellige filer for forskjellige operativsystemer.
 
-![Alt Bilde](https://gyazo.com/17151739e0314b4df73f68ce781979ff)
+![Alt Bilde](https://i.gyazo.com/17151739e0314b4df73f68ce781979ff.png)
 
 (6)
 
