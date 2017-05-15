@@ -67,6 +67,14 @@ Jo mer informasjon (bit) en person har, jo større sannsynlighet har de for å g
 Begynte med å opprette et repository fra GitHub og klonet dette ved bruk av
 git clone <URL>. Så laget vi filen "Hello.go" og brukte git add Hello.go, git status for å se om filen ble lagt til i staging, git commit -m "melding" og git push origin master for å opplaste den til GitHub.
 
+Hvis flere brukere ønsker å "pushe" endringer av samme linje så vil endringene bli "merged" av den siste brukeren 
+som "pusher". Serveren "merger" altså da ikke endringene, men brukerne.
+
+Det kan også oppstå en rekke situasjoner dersom begge endrer på samme linje i en fil:
+
+1)Brukeren som ikke enda har "committet" sin endring, vil måtte "stashe" sine endringer eller "merge" endringene når
+han "puller" fra server.
+2)den mest nylig endringen er den som blir "committet".
 
 
 1.2.4
@@ -86,25 +94,46 @@ mye og uoversiktlig.
 Gjorde mye av det samme som i 1.2.3 når vi først hadde fått tilgang til hovedrepositoren,
 bare at vi gjorde endringer i egen branch (som ble laget ved git checkout -b <branchnavn>), og sendte enn pull request og merget med master. (git merge <branchnavn>).
 
-Oversikt over objektfiler for de forskjellige plattformene:
-Windows: DLL, EXE
-Linux: ELF (buildavhengig)
-Mac:EXEC.
+En objekt-fil er en fil som inneholder objekt kode, som betyr at kompilatoren oppretter en objekt fil for hver kilde-fil før den setter dem sammen til noe kjørbart. I begynnelsen var det vanlig at hver type datamaskin hadde sitt eget unike format. Senere kom Unix, og andre operativ systemer som kan brukes I andre systemer enn det som den var laget for. Dette førte til at formatter som COFF og ELF nå brukes på ulike typer systemer. Systemene har også ulike objective formatter fordi de har ulike måter å lese og kalle på binære tallkoder.
 
-De forskjellige plattformene har ulike objekt formater fordi de har ulike måter de leser og kaller på binære tallkoder.
+Oversikt over objektfiler for de forskjellige platformene:
+Windows: PE, DLL
+Mac: Mach-O
+Linux: ELF (avhengig av build)
+
 
 
 (3) Hvilke forskjeller ser dere i forhold til programmeringsspråket Java?
 
-En av de største forskjellene mellom Java og Golang er at Golang leser koden en linje av gangen, og kan dermed kjøre store deler av programmet før den crasher, mens java krever at hele koden er feilfri.
-Golang er heller ikke objektorientert, noe som java er.
+Forskjellene når vi kjører kode I Golang og Java, er at Golang kompilatoren oversetter kode til objektfil (varierer med operativsystem) direkte, mens Java kompilatoren først oversetter til java bytecode slik at den kan utføres av et operativsystem, og deretter oversettes til det aktuelle objektfil-formatet.
+
+“Golang leser koden en linje av gangen” Når vi f eks, kjører kommandoen “ Go run <programmet vårt.go> til et format som operativsystemet kan utføre. Operativsystemet har så et program som kan lese den kompilerte koden linje for linje.
+
+
+-	Ingen nøkkelord som Public, og Private. Funksjoner  har stor forbokstav.
+-	Kompilerer raskere fordi Java bruker VM for å kjøre sin kode som gjør at det tar lengre tid enn for Go.
+-	Ingen semicolon nødvendig. Du kan bruke dem, men du må ikke, sammenlignet med Java.
+-	Når det kommer til variabeldeklarasjon, så krever Java at man spesifiserer type for variabelen, mens I Golang så antar kompilatoren typen hvis den ikke er definert på forhånd, f.eks. vil t := 2 bli antatt som en type av int(som kan være enten 32 eller 64bits-størrelse I følge godoc.)
+-	Golang er ikke objekt-orientert, men har visse egenskaper som man kan finne I andre objekt-orienterte spark som Java, C++ osv. F.eks, Structs tilsvarer klasser med felt.
+
 
 
 (4) 
 (Master-> log)
 Hvilke viktige poeng illustrerer denne øvelsen når det gjelder bruk av et programmeringsmiljø på en platform?
 
-Programmering på en platform har mange fordeler, der i blant versjonskontroll, effektivtet og åpenhet. Vi fant også ut at mappestruktur er veldig viktig for å kunne importere en selvlaget pakke, i dette tilfellet “package log”, som ble importert i main.go via “import ./log”. 
+Programmering på en platform har mange fordeler, der i blant versjonskontroll, og effektivitet. Vi fant også ut at mappestruktur er veldig viktig for å kunne importere en selvlaget pakke, i dette tilfellet “package log”, som ble importert i main.go via “import ./log”. En forutsetning for at dette skal kunne gå er at filene er i samme mappe og at den ene kaller opp funksjoner, som er definert I den andre. De må derfor ha samme pakke navn.
+
+Versjonskontroll trenger ikke nødvendigvis å være plattformuavhengig enda, siden de fleste systemer er basert på unix, så er det vel enklere å kunne tilby Gitbash som en løsning for windows baserte brukere. På spørsmål om det bør være plattformavhengig, så vil det nok I fremtiden komme ulike operativsystemer som ikke bare tilhører unix og da kan det kanskje være mer relevant og utvikle versjonskontroll som kan være plattformuavhengig.
+
+
+Et  eksempel på effektivitet knyttet til versjonskontroll  kan være at du har to personer som jobber med debugging/ utvikling av en ny versjon.
+Du når et punkt der du ønsker å gi ut programvaren du har utviklet, men du må debugge/ teste. I mellomtiden jobber din kollega på neste versjon av programvaren. Så I dette eksempelet så har du eldre kode og kode under utvikling separert som er en effektiv måte man kan jobbe på.
+
+GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes også til å hente, bygge og installere pakker utenfor det som er standard I Go. 
+
+
+
 
 
 (5)
