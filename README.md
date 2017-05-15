@@ -146,6 +146,7 @@ I mappen Log finner dere en main.go fil som importerer en funksjon fra log.go (f
 ```
 ~ $ go run main.go 10
 ```
+![Alt Bilde](https://i.gyazo.com/247d897c28e584464b71ee76be7ae7a8.png)
 
 Hvilke viktige poeng illustrerer denne øvelsen når det gjelder bruk av et programmeringsmiljø på en platform?
 
