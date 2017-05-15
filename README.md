@@ -49,12 +49,12 @@ Fra titallsystemet til totallsystemet bruker man det samme prinsippet med at all
 3-bit = 8 muligheter (tall, 0-7). (000, 001, 010, 011, 100, 101, 110, 111).
 
 (1) 4 Oddetall (1, 3, 5 og 7)
-Vi har en formel som sier noe om hvordan man skal regne informasjonsmengden basert på antall sannsynlige valgmuligheter, og også hvis man får mer informasjon om et valg som begrenser disse valgmulighetene igjen. Formelen er log2(1 / (M/N) ), der N er antall valgmuligheter (8), og M antall informasjon som begrenser valgmuligheter(4) N. Ved bruk av denne formelen vil svaret bli:  log2(1/(4/8)) = log2(2) = 1 bit.
+Vi har en formel som sier noe om hvordan man skal regne informasjonsmengden basert på antall sannsynlige valgmuligheter, og også hvis man får mer informasjon om et valg som begrenser disse valgmulighetene igjen. Formelen er log2(1 / (M/N) ), der N er antall valgmuligheter (8, alle valgmulighetene, 0-7), og M antall informasjon som begrenser valgmuligheter(4, fordi det er fire oddetall) N. Ved bruk av denne formelen vil svaret bli:  log2(1/(4/8)) = log2(2) = 1 bit.
 
 (2) Ikke multiplum av 3 (0, 3, 6). Da gjenstår 1, 2, 4, 5, 7.
 Log2(1/(5/8)) = 0.678072 bit. 
 
-(3) 011, 101, 110
+(3) Tallet inneholder nøyaktig to enere: 011, 101, 110
 Log2(1/(3/8)) =  ~1.4 bit.
 
 (4) Ut i fra opplysningene i oppgave 1,2 og 3, så vet vi at det eneste tallet som passer alle beskrivelsene er  5. Da blir formelen:
