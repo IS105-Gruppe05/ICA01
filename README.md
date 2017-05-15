@@ -13,6 +13,7 @@ Nils Fredrik Iselvmo Bjerk.
 - I denne oppgaven har alle bidratt. Ikke alle jobber på hver sin maskin, vi jobber av og til bare på noen av pcene og det er da de som laster opp det som er gjort. Derfor kan det vise at det er bare 5/8 som har lastet opp noe. 
 
 Oppgave 1.2.1
+
 Titall til totall:
 1 = 0001
 2 = 0010
@@ -44,6 +45,7 @@ Når man skal konvertere fra totallsystemet til titallsystemet, så bruker man d
 Fra titallsystemet til totallsystemet bruker man det samme prinsippet med at alle sifrene har posisjoner med forskjellige verdier, bare motsatt vei. Og da må man regne ut slik at de ulike verdiene til sammen blir 10. Over har vi laget en liten tabell som skriver hvilke verdier de ulike posisjonene i totallsystemet har. Ut ifra den kan man se at man trenger 1 på 2^3 plassen (for det blir 8, ”åtterplass”) og 1 i 2^1 plassen (det blir 2, ”toerplass”). De andre plassene vil da få 0. Altså blir 10 i titallsystemet da f.eks: 1010 i totallsystemet. (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0) = 8 + 0 + 2 + 0 = 10. 
 
 Oppgave 1.2.2
+
 3-bit = 8 muligheter (tall, 0-7). (000, 001, 010, 011, 100, 101, 110, 111).
 
 (1) 4 Oddetall (1, 3, 5 og 7)
