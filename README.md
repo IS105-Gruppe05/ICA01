@@ -21,11 +21,11 @@ Titall til totall:
 16 = 0001 0000
 256 = 0001 0000 0000
 
-Verdier på de ulike plassene:                 Eks. omregning fra ti- til totallsystemet.
-2^0=1                                                          1 = (2^0 x 1) = 1
-2^1=2                                                          2 = (2^1 x 1) + (2^0 x 0) = 10
-2^2=4                                                          5 = (2^2 x 1) + (2^1 x 0) + (2^0 x 1) = 101
-2^3=8                                                          osv.
+Verdier på de ulike plassene:                 
+2^0=1                                                         
+2^1=2                                                         
+2^2=4                                                         
+2^3=8                                                         
 2^4=16      
 2^5=32
 2^6=64
