@@ -97,9 +97,9 @@ bare at vi gjorde endringer i egen branch (som ble laget ved git checkout -b <br
 En objekt-fil er en fil som inneholder objekt kode, som betyr at kompilatoren oppretter en objekt fil for hver kilde-fil før den setter dem sammen til noe kjørbart. I begynnelsen var det vanlig at hver type datamaskin hadde sitt eget unike format. Senere kom Unix, og andre operativ systemer som kan brukes I andre systemer enn det som den var laget for. Dette førte til at formatter som COFF og ELF nå brukes på ulike typer systemer. Systemene har også ulike objective formatter fordi de har ulike måter å lese og kalle på binære tallkoder.
 
 Oversikt over objektfiler for de forskjellige platformene:
-Windows: PE, DLL
-Mac: Mach-O
-Linux: ELF (avhengig av build)
+- Windows: PE, DLL
+- Mac: Mach-O
+- Linux: ELF (avhengig av build)
 
 
 
@@ -111,7 +111,7 @@ Forskjellene når vi kjører kode I Golang og Java, er at Golang kompilatoren ov
 
 Forskjeller mellom Golang og Java
 
--	i Golang har vi ikke nøkkelord som Public, og Private. Funksjoner har stor forbokstav.
+-	I Golang har vi ikke nøkkelord som Public, og Private. Funksjoner har stor forbokstav.
 -	Kompilerer raskere fordi Java bruker VM for å kjøre sin kode som gjør at det tar lengre tid enn for Go.
 -	Ingen semikolon nødvendig for Golang. Du kan bruke dem, men du må ikke, sammenlignet med Java.
 -	Når det kommer til variabeldeklarasjon, så krever Java at man spesifiserer type for variabelen, mens I Golang så antar kompilatoren typen hvis den ikke er definert på forhånd, f.eks. vil t := 2 bli antatt som en type av int(som kan være enten 32 eller 64bits-størrelse I følge godoc.)
