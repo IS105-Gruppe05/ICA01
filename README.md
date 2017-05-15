@@ -195,7 +195,7 @@ Eller hvis man vil regne logaritmen av base 2 til 3:
 ```
 ~ $ ./logbcli 2 3
 ```
-
+![Alt Bilde](https://i.gyazo.com/f162c6d25edf1c2ff4e835c66a2c9d07.png)
 
 Hvordan skiller pakken log​, som dere har implementert, seg fra andre pakker i go, som, for eksempel, fmt​? 
 
