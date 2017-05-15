@@ -66,7 +66,27 @@ Jo mer informasjon (bit) en person har, jo større sannsynlighet har de for å g
 ## Oppgave 1.2.3
 
 Begynte med å opprette et repository fra GitHub og klonet dette ved bruk av
-git clone <URL>. Så laget vi filen "Hello.go" og brukte git add Hello.go, git status for å se om filen ble lagt til i staging, git commit -m "melding" og git push origin master for å opplaste den til GitHub.
+```
+~ $ git clone <URL til repository>.
+```
+
+Så laget vi filen "Hello.go", og brukte
+```
+~ $ git add Hello.go
+```
+og
+```
+~ $ git status
+```
+for å se om filen ble lagt til i staging. Deretter
+```
+~ $ git commit -m "melding"
+```
+og
+```
+~ $ git push origin master.
+```
+for å opplaste den til GitHub.
 
 Hvis flere brukere ønsker å "pushe" endringer av samme linje så vil endringene bli "merged" av den siste brukeren 
 som "pusher". Serveren "merger" altså da ikke endringene, men brukerne.
