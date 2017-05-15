@@ -1,4 +1,4 @@
-# is105-uke04
+# is105-ICA01
 
 Navnliste: 
 Abdikani Gureye, 
@@ -63,7 +63,7 @@ Log2(1/(1/8)) = 3 bit. Hun har altså all den informasjonen hun trenger for å v
 Jo mer informasjon (bit) en person har, jo større sannsynlighet har de for å gjette riktig tall.
 
 
-## 1.2.3
+## Oppgave 1.2.3
 
 Begynte med å opprette et repository fra GitHub og klonet dette ved bruk av
 git clone <URL>. Så laget vi filen "Hello.go" og brukte git add Hello.go, git status for å se om filen ble lagt til i staging, git commit -m "melding" og git push origin master for å opplaste den til GitHub.
@@ -78,7 +78,7 @@ han "puller" fra server.
 2)den mest nylig endringen er den som blir "committet".
 
 
-## 1.2.4
+## Oppgave 1.2.4
 
 (1) Hvilken fordeler og ulemper har en git-flow-modell med en hovedrepository?
 
@@ -133,9 +133,6 @@ Et  eksempel på effektivitet knyttet til versjonskontroll  kan være at du har 
 Du når et punkt der du ønsker å gi ut programvaren du har utviklet, men du må debugge/ teste. I mellomtiden jobber din kollega på neste versjon av programvaren. Så I dette eksempelet så har du eldre kode og kode under utvikling separert som er en effektiv måte man kan jobbe på.
 
 GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes også til å hente, bygge og installere pakker utenfor det som er standard I Go. 
-
-
-
 
 
 (5)
