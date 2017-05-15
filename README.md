@@ -106,15 +106,13 @@ han "puller" fra server.
 Link til hovedrepository: https://github.com/IS105-Gruppe05/ICA01 
 Fordeler: Parallell jobbing fungerer godt, enkelte kan gjøre endringer, så kan andre 
 i gruppen sjekke om jobber er gjort bra. Det er også lettere å gå tilbake å gjør endringer
-hvis det er noe som ikke fungerer. Samtlige har også mulighet til å kun gjøre endringer i sin egen branch, slik at man unngår å overskrive andres arbeid.
+hvis det er noe som ikke fungerer. Samtlige har også mulighet til å kun gjøre endringer i sin egen branch, slik at man unngår å overskrive andres arbeid. Gjorde mye av det samme som i 1.2.3 når vi først hadde fått tilgang til hovedrepositoren,
+bare at vi gjorde endringer i egen branch (som ble laget ved git checkout -b <branchnavn>), og sendte enn pull request og merget med master. (git merge <branchnavn>).
 Ulemper: Hvis man ikke er flink til å update/merge branchen sin ofte, så kan det bli
 mye og uoversiktlig. Også hvis flere gjør endringer samtidig så kan det bli komplikasjoner.
 
 
 (2) Finn ut hva heter objektfiler for de mest brukte platformer (Unix/Linux, MS Windows, Mac OS X)! Hvorfor, etter deres mening, har disse platformene så forskjellige objektfil-formater?
-
-Gjorde mye av det samme som i 1.2.3 når vi først hadde fått tilgang til hovedrepositoren,
-bare at vi gjorde endringer i egen branch (som ble laget ved git checkout -b <branchnavn>), og sendte enn pull request og merget med master. (git merge <branchnavn>).
 
 En objekt-fil er en fil som inneholder objekt kode, som betyr at kompilatoren oppretter en objekt fil for hver kilde-fil før den setter dem sammen til noe kjørbart. I begynnelsen var det vanlig at hver type datamaskin hadde sitt eget unike format. Senere kom Unix, og andre operativ systemer som kan brukes I andre systemer enn det som den var laget for. Dette førte til at formatter som COFF og ELF nå brukes på ulike typer systemer. Systemene har også ulike objective formatter fordi de har ulike måter å lese og kalle på binære tallkoder.
 
@@ -122,7 +120,6 @@ Oversikt over objektfiler for de forskjellige platformene:
 Windows: PE, DLL
 Mac: Mach-O
 Linux: ELF (avhengig av build)
-
 
 
 (3) Hvilke forskjeller ser dere i forhold til programmeringsspråket Java?
@@ -141,9 +138,7 @@ Forskjeller mellom Golang og Java
 
 
 
-(4) 
-
-I mappen Log finner dere en main.go fil som importerer en funksjon fra log.go (finnes i mappen log). Den beregner logartimen av base 2 til et tall som dere bestemmer. F.eks. hvis dere vil regne ut logaritmen av base 2 til 10:
+(4) I mappen Log finner dere en main.go fil som importerer en funksjon fra log.go (finnes i mappen log). Den beregner logartimen av base 2 til et tall som dere bestemmer. F.eks. hvis dere vil regne ut logaritmen av base 2 til 10:
 ```
 ~ $ go run main.go 10
 ```
@@ -162,9 +157,7 @@ Du når et punkt der du ønsker å gi ut programvaren du har utviklet, men du m�
 GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes også til å hente, bygge og installere pakker utenfor det som er standard I Go. 
 
 
-(5)
-
-I mappen logcli finnes en logcli.go fil hvor også en kan velge et tall, og regne dette tallets logartime av base 2.
+(5) I mappen logcli finnes en logcli.go fil hvor også en kan velge et tall, og regne dette tallets logartime av base 2.
 Men i denne så ligger all koden i samme, slik at det er lettere å builde. Vi har valgt å ikke legge med noen kjørbar fil, siden det er lettere for hver enkel å bare builde selv, slik at de for et program som kan kjøres på sitt eget operativsystem.
 
 ```
@@ -183,9 +176,7 @@ i tillegg så vil man måtte “builde” forskjellige filer for forskjellige op
 
 ![Alt Bilde](https://i.gyazo.com/17151739e0314b4df73f68ce781979ff.png)
 
-(6)
-
-I mappen logbcli finnes en logbcli.go fil som er veldig like logcli.go filen, bare at i denne versjonen kan man også velge base, hvor basen er det første argumentet. Så hvis man vil regne logaritmen av base 10 til 5, må man først builde logbcli.go filen, og deretter kjøre programmet:
+(6) I mappen logbcli finnes en logbcli.go fil som er veldig like logcli.go filen, bare at i denne versjonen kan man også velge base, hvor basen er det første argumentet. Så hvis man vil regne logaritmen av base 10 til 5, må man først builde logbcli.go filen, og deretter kjøre programmet:
 
 ```
 ~ $ ./logbcli 10 5
