@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("yolo")
 	fmt.Println("Det var ikke meg")
 	fmt.Println("nils")
-	fmt.Println("abdi")
+	fmt.Println("Abdi")
 	fmt.Println("Brede")
 	fmt.Println("Jan Kevin")
 
