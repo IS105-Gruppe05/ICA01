@@ -161,7 +161,18 @@ GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes ogs�
 
 
 (5)
-(Master -> log -> logbcli.exe) 
+I mappen logcli finnes en logcli.go fil hvor også en kan velge et tall, og regne dette tallets logartime av base 2.
+Men i denne så ligger all koden i samme, slik at det er lettere å builde. Vi har valgt å ikke legge meg noen kjørbar fil, siden det er lettere for hver enkel å bare builde selv, slik at de for et program som kan kjøres på sitt eget operativsystem.
+
+```
+~ $ go build logcli.go 
+```
+Da har man buildet et kjørbart program, og kan kjøres ved denne kommandoen, hvis man igjen vil bruke 10 som eksempel:
+
+```
+~ $ ./logcli 10
+```
+
 Er det hensiktsmessig å legge inn denne filen i git repository? Begrunn svaret!
 
 Nei! Den eneste hensikten med å ha et utførbart program i Repositoryen er for å dele den med resten av gruppen. MEN, siden alle har tilgang til .go filene vil alle kunne builde sine egne programmer, så mye av hensikten faller egentlig bort.
