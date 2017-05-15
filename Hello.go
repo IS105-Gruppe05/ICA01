@@ -3,7 +3,7 @@ import "fmt"
 func main() {
 	fmt.Println("Hello, 世界")
 	fmt.Println("Mikael var her igjen")
-	fmt.Println("Morten endret dette, wiii")
+	fmt.Println("Morten endret dette, wiiiiiiiiiiiiiiiiiiiiiiii")
 	fmt.Println("Hei alle sammen")
 	fmt.Println("Her er enda en endring")
 	fmt.Println("Eirik sier hallo") // KOMMENTAR
