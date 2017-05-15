@@ -38,6 +38,7 @@ Totall til titall:
 100 = 1*2^2 + 0*2^1 + 0*2^0 = 4 + 0 + 0 = 4
 1001 = 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0 = 8 + 0 + 0 +1 = 9
 1100110011 = 512 + 256 + 0x128 + 0x64 + 32 + 16 + 0x8 + 0x4 + 2 + 1 = 819 
+
 ^10 sifre, derfor vet man det må hvertfall være 2^9
 
 Når man skal konvertere fra totallsystemet til titallsystemet, så bruker man det faktum at det kun brukes to sifre i totallsystemet, 0 og 1. 0 og 1 representerer da ulike verdier, basert på hvilken posisjon de har. Ut ifra dette bruker man grunntallet 2, og opphøyer dette i sifferets posisjon nummer og multipliserer dette med sifferverdien.  10 i totallsystemet blir da f.eks: (1 * 2^1) + (0 * 2^0) = 2 + 0 = 2 i titallsystemet. 
@@ -164,7 +165,7 @@ GOPATH bruker vi for å vise til steder vi kan se etter Go kode. Den brukes ogs�
 (5)
 
 I mappen logcli finnes en logcli.go fil hvor også en kan velge et tall, og regne dette tallets logartime av base 2.
-Men i denne så ligger all koden i samme, slik at det er lettere å builde. Vi har valgt å ikke legge meg noen kjørbar fil, siden det er lettere for hver enkel å bare builde selv, slik at de for et program som kan kjøres på sitt eget operativsystem.
+Men i denne så ligger all koden i samme, slik at det er lettere å builde. Vi har valgt å ikke legge med noen kjørbar fil, siden det er lettere for hver enkel å bare builde selv, slik at de for et program som kan kjøres på sitt eget operativsystem.
 
 ```
 ~ $ go build logcli.go 
