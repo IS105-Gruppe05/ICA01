@@ -109,10 +109,11 @@ Forskjellene når vi kjører kode I Golang og Java, er at Golang kompilatoren ov
 
 “Golang leser koden en linje av gangen” Når vi f eks, kjører kommandoen “ Go run <programmet vårt.go> til et format som operativsystemet kan utføre. Operativsystemet har så et program som kan lese den kompilerte koden linje for linje.
 
+Forskjeller mellom Golang og Java
 
--	Ingen nøkkelord som Public, og Private. Funksjoner  har stor forbokstav.
+-	i Golang har vi ikke nøkkelord som Public, og Private. Funksjoner har stor forbokstav.
 -	Kompilerer raskere fordi Java bruker VM for å kjøre sin kode som gjør at det tar lengre tid enn for Go.
--	Ingen semicolon nødvendig. Du kan bruke dem, men du må ikke, sammenlignet med Java.
+-	Ingen semikolon nødvendig for Golang. Du kan bruke dem, men du må ikke, sammenlignet med Java.
 -	Når det kommer til variabeldeklarasjon, så krever Java at man spesifiserer type for variabelen, mens I Golang så antar kompilatoren typen hvis den ikke er definert på forhånd, f.eks. vil t := 2 bli antatt som en type av int(som kan være enten 32 eller 64bits-størrelse I følge godoc.)
 -	Golang er ikke objekt-orientert, men har visse egenskaper som man kan finne I andre objekt-orienterte spark som Java, C++ osv. F.eks, Structs tilsvarer klasser med felt.
 
