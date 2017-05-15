@@ -16,10 +16,15 @@ Nils Fredrik Iselvmo Bjerk.
 
 Titall til totall:
 1 = 0001
+
 2 = 0010
+
 5 = 0101
+
 8 = 1000
+
 16 = 0001 0000
+
 256 = 0001 0000 0000
 
 Verdier på de ulike plassene:                 
