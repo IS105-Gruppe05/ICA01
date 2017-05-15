@@ -34,9 +34,13 @@ Verdier på de ulike plassene:
 2^3=8                                                         
 2^4=16      
 2^5=32
+
 2^6=64
+
 2^7=128
+
 2^8=256
+
 2^9=512
 
 Totall til titall: 
